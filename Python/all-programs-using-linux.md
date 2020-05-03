@@ -1,0 +1,8 @@
+- first we will do SSH 
+- then write command **--> sudo su**
+- then write **--> python**
+
+
+- now we will start writing python code
+
+   ***1 Addition of two numbers***
