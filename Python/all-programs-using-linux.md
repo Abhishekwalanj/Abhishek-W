@@ -6,3 +6,5 @@
 - now we will start writing python code
 
    ***1 Addition of two numbers***
+   
+   <img src ="/images/add.png" width="400">
