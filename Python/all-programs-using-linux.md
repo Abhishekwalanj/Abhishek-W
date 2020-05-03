@@ -7,4 +7,4 @@
 
    ***1 Addition of two numbers***
    
-   <img src ="/images/add.png" width="400">
+   <img src ="/Images/Add.PNG" width="400">
