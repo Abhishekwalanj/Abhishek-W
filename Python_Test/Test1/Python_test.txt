@@ -1,0 +1,93 @@
+1 Given a number count the total number of digits in a number
+  For example: The number is 75869, so the output should be Reverse the following list using for loop list1 = [10, 20, 30, 40, 50]
+
+#Solution for count question 
+?
+count = 0
+number = int(input("Enter a number "))
+while (number > 0):
+    number = number//10
+    count = count + 1
+print ("Total number of digits : ",count)  
+?
+?
+#Solution for reveresing a string
+?
+list1 = []
+n = int(input("Enter number of elements : "))
+for i in range(0, n): 
+    element = int(input()) 
+    list1.append(element)  
+    New_list = list1[::-1]
+print("The reversed list given above is :",New_list)
+
+
+
+
+2 Given 2 strings, s1 and s2, create a new string by appending s2 in the middle of s1¶
+  Expected Outcome: appendMiddle("Chrisdem", IamNewString) ? "ChrIamNewStringisdem"
+
+#Solution
+
+String1= input("Enter a your 1st name :")
+String2= input("Enter a your last name :")
+Seperator = int(len(String1) /2)
+print("The original Strings are", String1, String2)
+Centered = String1[:Seperator-1:]+ String2 + String1[Seperator-1:]
+print("After appending new string in middle", Centered)
+
+
+3 Arrange String characters such that lowercase letters should come first
+ Given input String of combination of the lower and upper case arrange characters
+ in such a way that all lowercase letters should come first. 
+ Expected Output: input_String = PyNaTive arranging characters giving precedence
+ to lowercase letters aeiNPTvy arranging characters giving precedence to lowercase letters: yaivePNTase
+
+#Solution
+
+lower_case = []
+upper_case = []
+User_input = input("Enter your Word with upper and lower case alphabets mixed :")  #Word eg ABhIshEk
+for char in User_input:
+    if char.islower():
+        lower_case.append(char)
+    else:
+        upper_case.append(char)
+SortedStr = ''.join(lower_case + upper_case)
+print("Arranged characters with precedence to lowercase letters:", SortedStr)
+
+
+
+5
+ Given a two list. Create a third list by picking an odd-index element from the first list and even index¶
+ elements from second. For Example: 
+ listOne = [3, 6, 9, 12, 15, 18, 21] listTwo = [4, 8, 12, 16, 20, 24, 28] 
+ Expected Output: Element at odd-index positions from list one [6, 12, 18] 
+ Element at even-index positions from list two [4, 12, 20, 28] Printing Final third list [6, 12, 18, 4, 12, 20, 28]
+
+#Solution
+
+list1 = []
+n = int(input("Enter number of elements for list1 : "))
+for i in range(0, n): 
+    element = int(input()) 
+    list1.append(element)
+list2 = []
+n = int(input("Enter number of elements for list2: "))
+for i in range(0, n): 
+    element = int(input()) 
+    list2.append(element)    
+list3 = list()
+?
+Odd = list1[1::2]
+print("Element at odd index positions from list1: ",Odd)
+?
+Even = list2[0::2]
+print("Element at Even index positions from list2: ",Even)
+?
+print("Mixed list with odd even index positions")
+list3.extend(Odd)
+list3.extend(Even)
+print(list3)
+
+?
